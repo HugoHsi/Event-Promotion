@@ -3,12 +3,16 @@
     src: url("./assets/AktivGroteskCorp-Regular.woff2");
 }
 
+body {
+    background-color: black;
+}
+
 .no-move {
     position: fixed;
 }
 
 img{
-    opacity: 0.75;
+    opacity: 0.5;
 }
 .blue-corner {
 width: 2201.76px;
@@ -16,7 +20,7 @@ height: 1066.48px;
 left: -300px;
 bottom: -1000px;
 
-background: lightblue;
+background: aquamarine;
 transform: rotate(21.22deg);
 }
 
@@ -24,6 +28,7 @@ h1 {
 font-family: aktiv;
 font-size: 100px;
 margin: 0;
+color: white;
 }
 
 p {
@@ -31,6 +36,7 @@ font-family: aktiv;
 font-size: 40px;
 margin: 0;
 margin-bottom: 5vh;
+color: white;
 }
 
 .spec {
@@ -92,6 +98,18 @@ button:hover {
 }
 
 @media only screen and (max-width: 1427px) {
+    h1 {
+        color: black;
+    }
+
+    p {
+        color: black;
+    }
+
+    body {
+        background-color: white;
+    }
+
     img {
         display: none;
     }
