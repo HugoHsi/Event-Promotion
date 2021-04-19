@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "aktiv";
+    src: url("./assets/AktivGroteskCorp-Regular.woff2");
+}
+
+.no-move {
+    position: fixed;
+}
+
+img{
+    opacity: 0.75;
+}
+.blue-corner {
+width: 2201.76px;
+height: 1066.48px;
+left: -300px;
+bottom: -1000px;
+
+background: lightblue;
+transform: rotate(21.22deg);
+}
+
+h1 {
+font-family: aktiv;
+font-size: 100px;
+margin: 0;
+}
+
+p {
+font-family: aktiv;
+font-size: 40px;
+margin: 0;
+margin-bottom: 5vh;
+}
+
+.spec {
+    position: absolute;
+    width: fit-content;
+right: 9vh;
+top: 10vh;
+}
+
+.main-text {
+    left: 3vw;
+    bottom: 3vh;
+}
+
+.sign-up {
+display: flex;
+flex-direction: column;
+}
+
+::placeholder {
+    color: black;
+    font-family: aktiv;
+    text-align: center;
+}
+
+input {
+    width: 300px;
+    height: 80px;
+    
+    background: #F2F2F2;
+    border: 5px solid black;
+    box-sizing: border-box;
+    font-family: aktiv;
+    font-size: 40px;
+    text-align: center;
+    }
+
+button {
+    width: 300px;
+    height: 80px;
+    margin-top: 20px;
+    background: black;
+    border: 5px solid black;
+    box-sizing: border-box;
+    font-family: aktiv;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 300ms ease all;
+}
+
+.covid {
+    display: none;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width: 1427px) {
+    img {
+        display: none;
+    }
+    
+    .blue-corner {
+        z-index: 1;
+    }
+
+    .main-text {
+        display: none;
+    }
+
+    .top {
+        margin-bottom: 400px;
+    }
+    .sign-up {
+        z-index: 2;
+        position: fixed;
+        bottom: 3vh;
+    }
+    .covid {
+        display:block;
+    }
+    .spec {
+        left: 15%;
+    }
+    .keep {
+        display: block;
+        z-index: 3;
+        left: 15%;
+    }
+  }
